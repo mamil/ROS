@@ -65,3 +65,6 @@ sudo touch ./hdisk/boot/grub/grub.cfg
 ## 用VMware运行
 先用VMware创建无盘的Ubuntu，然后在虚拟机设置中把硬盘改为刚才转换后的文件，就可以启动系统了。
 
+
+# 建造二级引导器
+

@@ -52,5 +52,5 @@ Mkfile.old
 dkms.conf
 
 #
-hd.img
+#hd.img
 hdisk
