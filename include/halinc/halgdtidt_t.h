@@ -1,7 +1,5 @@
 /**********************************************************
 		全局／中断描述符头文件halgdtidt_t.h
-***********************************************************
-				彭东
 **********************************************************/
 #ifndef _HALGDTIDT_T_H
 #define _HALGDTIDT_T_H
@@ -31,9 +29,9 @@
 #define	INDEX_FLAT_C		1
 #define	INDEX_FLAT_RW		2
 /* 选择子 */
-#define	SELECTOR_DUMMY		0		
-#define	SELECTOR_FLAT_C		0x08			
-#define	SELECTOR_FLAT_RW	0x10		 
+#define	SELECTOR_DUMMY		0
+#define	SELECTOR_FLAT_C		0x08
+#define	SELECTOR_FLAT_RW	0x10
 
 
 #define	SELECTOR_KERNEL_CS	SELECTOR_FLAT_C
@@ -149,7 +147,6 @@ typedef struct s_X64TSS
 	u64_t reserv92;
 	u16_t reserv100;
 	u16_t iobase;
-	
 }__attribute__((packed)) x64tss_t;
 
 

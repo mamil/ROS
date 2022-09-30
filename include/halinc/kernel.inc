@@ -83,7 +83,7 @@ global  asm_ret_from_user_mode
 	push rbp
 	push rsi
 	push rdi
-	
+
 	push r8
 	push r9
 	push r10
@@ -92,9 +92,9 @@ global  asm_ret_from_user_mode
 	push r13
 	push r14
 	push r15
-	
+
 	xor r14,r14
-	
+
 	mov r14w,ds
 	push r14
 	mov r14w,es
@@ -103,12 +103,12 @@ global  asm_ret_from_user_mode
 	push r14
 	mov r14w,gs
 	push r14
-	
+
 	;push    ds
 	;push    es
 	;push    fs
 	;push    gs
-	
+
 %endmacro
 
 
@@ -119,14 +119,14 @@ global  asm_ret_from_user_mode
 	;pop	ds
 	pop r14
 	mov gs,r14w
-	pop r14 
+	pop r14
 	mov fs,r14w
 	pop r14
 	mov es,r14w
 	pop r14
 	mov ds,r14w
-	 
-	
+
+
 	pop r15
 	pop r14
 	pop r13
@@ -135,7 +135,7 @@ global  asm_ret_from_user_mode
 	pop r10
 	pop r9
 	pop r8
-	
+
 	pop rdi
 	pop rsi
 	pop rbp
@@ -143,7 +143,7 @@ global  asm_ret_from_user_mode
 	pop rcx
 	pop rbx
 	pop rax
-	
+
 	iretq
 %endmacro
 
@@ -155,7 +155,7 @@ global  asm_ret_from_user_mode
 	push rbp
 	push rsi
 	push rdi
-	
+
 	push r8
 	push r9
 	push r10
@@ -173,12 +173,12 @@ global  asm_ret_from_user_mode
 	push r14
 	mov r14w,gs
 	push r14
-	
+
 	;push    ds
 	;push    es
 	;push    fs
 	;push    gs
-	
+
 %endmacro
 
 %macro	RESTOREALLFAULT	0
@@ -186,16 +186,16 @@ global  asm_ret_from_user_mode
 	;pop	fs
 	;pop	es
 	;pop	ds
-	
+
 	pop r14
 	mov gs,r14w
-	pop r14 
+	pop r14
 	mov fs,r14w
 	pop r14
 	mov es,r14w
 	pop r14
 	mov ds,r14w
-	
+
 	pop r15
 	pop r14
 	pop r13
@@ -204,7 +204,7 @@ global  asm_ret_from_user_mode
 	pop r10
 	pop r9
 	pop r8
-	
+
 	pop rdi
 	pop rsi
 	pop rbp
@@ -212,7 +212,7 @@ global  asm_ret_from_user_mode
 	pop rcx
 	pop rbx
 	pop rax
-	
+
 	add rsp,8
 	iretq
 %endmacro
@@ -249,7 +249,7 @@ global  asm_ret_from_user_mode
 
 %macro	HARWINT	1
 	SAVEALL
-	
+
 	mov r14w,0x10
 	mov ds,r14w
 	mov es,r14w
@@ -266,7 +266,7 @@ global  asm_ret_from_user_mode
 
 
 %macro  EXI_SCALL  0
-	
+
 	;push rax
 	push rbx
 	push rcx
@@ -274,7 +274,7 @@ global  asm_ret_from_user_mode
 	push rbp
 	push rsi
 	push rdi
-	
+
 	push r8
 	push r9
 	push r10

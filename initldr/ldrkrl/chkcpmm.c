@@ -58,7 +58,7 @@ mrsdp_t *findacpi_rsdp_core(void *findstart, u32_t findlen)
     return NULL;
 }
 
-mrsdp_t *find_acpi_rsdp()
+PUBLIC mrsdp_t *find_acpi_rsdp()
 {
 
     void *fndp = (void *)acpi_get_bios_ebda();
@@ -77,7 +77,7 @@ mrsdp_t *find_acpi_rsdp()
     return NULL;
 }
 
-void init_acpi(machbstart_t *mbsp)
+PUBLIC void init_acpi(machbstart_t *mbsp)
 {
     mrsdp_t *rdp = NULL;
     rdp = find_acpi_rsdp();
