@@ -67,4 +67,6 @@ sudo touch ./hdisk/boot/grub/grub.cfg
 
 
 # 建造二级引导器
+环境改为VMware运行Ubuntu，Ubuntu里面运行VirtualBox。
+需要在VBox里面创建名为ROS的系统，不要加虚拟盘。
 
