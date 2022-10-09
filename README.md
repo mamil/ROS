@@ -65,3 +65,8 @@ sudo touch ./hdisk/boot/grub/grub.cfg
 ## 用VMware运行
 先用VMware创建无盘的Ubuntu，然后在虚拟机设置中把硬盘改为刚才转换后的文件，就可以启动系统了。
 
+
+# 建造二级引导器
+环境改为VMware运行Ubuntu，Ubuntu里面运行VirtualBox。
+需要在VBox里面创建名为ROS的系统，不要加虚拟盘。
+
