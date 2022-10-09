@@ -1,7 +1,9 @@
 /****************************************************************
-        HAL全局初始化头文件halinit.h
+        kernel全局初始化头文件krlinit.h
 ****************************************************************/
-#ifndef _HALINIT_H
-#define _HALINIT_H
-void init_hal();
-#endif // HALINIT_H
+#ifndef _KRLINIT_H
+#define _KRLINIT_H
+void init_krl();
+
+
+#endif // KRLINIT_H
