@@ -5,5 +5,6 @@
 #define _ROSMCTRL_H
 #include "config.h"
 #include "halheads.h"
+#include "krlheads.h"
 
 #endif
