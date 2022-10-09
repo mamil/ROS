@@ -4,7 +4,7 @@
 #include "rostypes.h"
 #include "rosmctrl.h"
 
-const char *ros_version = "ros\n内核版本:00.01\n构建于 "__DATE__
+const char *ros_version = "ROS\n内核版本:00.01\n构建于 "__DATE__
                            " "__TIME__
                            "\n";
 
