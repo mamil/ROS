@@ -12,7 +12,7 @@ void init_hal()
     init_halplaltform();
     // move_img2maxpadr(&kmachbsp);
     //初始化内存
-    // init_halmm();
+    init_halmm();
     //初始化中断
     // init_halintupt();
     return;
