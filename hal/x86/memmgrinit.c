@@ -14,7 +14,10 @@ void init_memmgr()
     init_search_krloccupymm(&kmachbsp);
     //合并内存页到内存区中
     init_merlove_mem();
+	//合并内存页到内存区中
     init_memmgrob();
+	//初始化kmsob
+	init_kmsob();
 
 	return;
 }
